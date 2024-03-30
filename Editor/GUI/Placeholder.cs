@@ -5,7 +5,6 @@ namespace DreadScripts.VRCSDKPlus
 {
     public static class Placeholder
     {
-
         public static void GUILayout(float height)
         {
             GUI(EditorGUILayout.GetControlRect(false, height));
@@ -18,7 +17,7 @@ namespace DreadScripts.VRCSDKPlus
 
         private static void GUI(Rect rect, float color)
         {
-            EditorGUI.DrawTextureTransparent(rect, GetColorTexture(color));
+            EditorGUI.DrawTextureTransparent(rect, VRCSDKPlusToolbox.GetColorTexture(color));
         }
     }
 }
